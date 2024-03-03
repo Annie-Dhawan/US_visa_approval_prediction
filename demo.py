@@ -8,4 +8,4 @@ logging.info("Welcome to our Custom log")
 try:
     a = 1/"10"
 except Exception as e:
-    raise USvisaException(e,sys) from e
+    logging.info(e)
