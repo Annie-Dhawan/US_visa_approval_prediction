@@ -1,0 +1,72 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="td" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="26">
+            <item index="0" class="java.lang.String" itemvalue="pandas" />
+            <item index="1" class="java.lang.String" itemvalue="seaborn" />
+            <item index="2" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="3" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="4" class="java.lang.String" itemvalue="sklearn" />
+            <item index="5" class="java.lang.String" itemvalue="numpy" />
+            <item index="6" class="java.lang.String" itemvalue="xgboost" />
+            <item index="7" class="java.lang.String" itemvalue="yaml" />
+            <item index="8" class="java.lang.String" itemvalue="xpython-multipart" />
+            <item index="9" class="java.lang.String" itemvalue="mypy-boto3-s3" />
+            <item index="10" class="java.lang.String" itemvalue="transformers" />
+            <item index="11" class="java.lang.String" itemvalue="python-box" />
+            <item index="12" class="java.lang.String" itemvalue="ensure" />
+            <item index="13" class="java.lang.String" itemvalue="py7zr" />
+            <item index="14" class="java.lang.String" itemvalue="nltk" />
+            <item index="15" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="16" class="java.lang.String" itemvalue="torch" />
+            <item index="17" class="java.lang.String" itemvalue="datasets" />
+            <item index="18" class="java.lang.String" itemvalue="rouge_score" />
+            <item index="19" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="20" class="java.lang.String" itemvalue="tqdm" />
+            <item index="21" class="java.lang.String" itemvalue="boto3" />
+            <item index="22" class="java.lang.String" itemvalue="fastapi" />
+            <item index="23" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="24" class="java.lang.String" itemvalue="sacrebleu" />
+            <item index="25" class="java.lang.String" itemvalue="box" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E265" />
+          <option value="E401" />
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="sensor.entity.config_entity.TrainingPipelineConfig.*" />
+          <option value="object.transform" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
