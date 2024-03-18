@@ -13,6 +13,7 @@ list_of_files = [
     f"{project_name}/components/model_evaluation.py",
     f"{project_name}/components/model_pusher.py",
     f"{project_name}/configuration/__init__.py",
+    f"{project_name}/configuration/mongo_db_connection.py",
     f"{project_name}/constant/__init__.py",
     f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/artifact_entity.py",
