@@ -17,7 +17,7 @@ class USvisaData():
     def __init__(self):
         try:
             #connecting with db
-            self.mongoclient = MongoDBClient(database_name=DATABASE_NAME)
+            self.mongo_client = MongoDBClient(database_name=DATABASE_NAME)
         except Exception as e:
             raise USvisaException(e, sys)
 

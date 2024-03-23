@@ -27,7 +27,7 @@ class MongoDBClient():
 
             self.mongo_db_url = mongo_db_url
             # making the connection
-            self.client = pymongo.MongoClient(client=mongo_db_url, tlsCAFile=ca)
+            self.client = pymongo.MongoClient(host=mongo_db_url, tlsCAFile=ca)
             self.database = self.client[database_name]
             self.database_name = database_name
             logging.info("MongoDB connection successful")
