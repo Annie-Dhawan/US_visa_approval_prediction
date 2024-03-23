@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import date
 
 DATABASE_NAME = 'DB_NAME'
 COLLECTION_NAME = 'visa_data'
@@ -17,6 +17,10 @@ TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
 
 SCHEMA_FILE_PATH: str = os.path.join("config","schema.yaml")
+PREPROCESSING_OBJECT_FILE_NAME: str = "preprocessing.pkl"
+
+TARGET_COLUMN = "case_status"
+CURRENT_YEAR = date.today().year
 
 """
 Data Ingestion related constants will start from DATA_INGESTION_VAR_NAME
@@ -34,3 +38,9 @@ DATA_VALIDATION_DIR_NAME: str = "data_validation"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
 
+"""
+Data Transformation related constants will start from DATA_TRANSFORMATION_VAR_NAME
+"""
+DATA_TRANSFORMATION_DIR_NAME: str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR: str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR: str = "transformed_object"
