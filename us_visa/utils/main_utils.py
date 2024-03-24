@@ -8,7 +8,10 @@ from us_visa.exception import USvisaException
 
 
 def read_data(filepath):
-    return pd.DataFrame(filepath)
+    try:
+        return pd.read_csv(filepath)
+    except Exception as e:
+        raise USvisaException(e, sys)
 
 
 def read_yaml_file(file_path):
@@ -73,13 +76,13 @@ def load_numpy_array_data(file_path: str) -> np.array:
         raise USvisaException(e, sys)
 
 
-def drop_columns(df, cols: list) -> DataFrame:
+def drop_columns(df, cols: list):
     """
     drop the columns form a pandas DataFrame
     df: pandas DataFrame
     cols: list of columns to be dropped
     """
-    logging.info("Entered drop_columns methon of utils")
+    logging.info("Entered drop_columns method of utils")
 
     try:
         df = df.drop(columns=cols, axis=1)
@@ -89,3 +92,17 @@ def drop_columns(df, cols: list) -> DataFrame:
         return df
     except Exception as e:
         raise USvisaException(e, sys)
+
+
+def save_object(file_path: str, obj: object) -> None:
+    logging.info("Entered the save_object method of utils")
+
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            dill.dump(obj, file_obj)
+
+        logging.info("Exited the save_object method of utils")
+
+    except Exception as e:
+        raise USvisaException(e, sys) from e
